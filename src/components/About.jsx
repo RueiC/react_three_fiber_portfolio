@@ -46,16 +46,37 @@ const About = () => {
             <p>
               在自學期間，除了學習基本的HTML、CSS /
               SASS、JavaScript之外，也多方探索嘗試新的技術，目前使用中且持續學習的技術為Next.js、Vue、React、TypeScript、Tailwind
-              CSS等。在過去實作的三個專案中，學習到了如何實作API的串接、CRUD、SSG、SSR、Typescript的型別定義等，具備基礎網頁開發能力。
+              CSS等。
+              <br />
+              <br />
+              在整個自學的過程中，我實作了三個專案：
+              <br />
+              <br />
+              • 第一個專案是用React Three Fiber做的作品集網站，主要是用React
+              Three Fiber、SASS、Framer Motion、來完成網站的視覺效果。
+              <br />
+              <br />
+              • 第二個專案是用Vue
+              3做的，名字叫做Quizler，藉由製作自己的單字卡，透過學習模式，來增加自己的記憶，讓語言學習更有效率。
+              <br />
+              <br />
+              •
+              第三個專案是用Next.js做的電商購物網站，除了把放品放到購物車結帳之外，也可以針對商品做評論以及評分。
+              <br />
+              <br />•
+              最後一個專案是用Next.js做的，名字叫做Pincture，你可以在上面上傳自己的圖片，收藏以及評論別人分享的圖片，是一個收集靈感的工具。
             </p>
           ) : null}
 
           {about === 'advantages' ? (
             <p>
-              設計背景出身：了解Photoshop、Illustrator、Figma軟體的操作，可減少與設計師的溝通成本
+              最後做一下總結，我自己是設計背景出身，了解Photoshop、Illustrator、Figma軟體的操作，可減少與設計師的溝通成本。另外直到現在依然持續不斷的自學當中，未來會持續不斷的自主學習，促進成長。
               <br />
               <br />
-              自學背景出身：會不斷的自主學習，促進成長
+              未來希望能夠以前端工程師的身份，持續讓開發技能成長精進；同時也希望累積開發經驗的同時，試著將產品思維融入開發的過程，變成一個思考更全面的人。
+              <br />
+              <br />
+              期許未來可以在該領域中持續的精進成長，並為貴公司提供更多價值。
             </p>
           ) : null}
         </motion.div>
@@ -100,7 +121,7 @@ const About = () => {
               name='toggle'
               value='advantages'
             />
-            <label htmlFor='advantages'>My Advantages</label>
+            <label htmlFor='advantages'>Conclusion</label>
           </div>
         </div>
         <img src={about_me.src} alt='people' />
