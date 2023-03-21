@@ -1,0 +1,35 @@
+@use '../Variables.scss' as styles;
+
+.tilt {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 2px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.03);
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: styles.$white-color;
+    border-radius: 20px;
+    padding: 5px 12px;
+    min-height: 280px;
+
+    & img {
+      width: 8rem;
+      height: 8rem;
+      object-fit: contain;
+    }
+
+    & h3 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+}

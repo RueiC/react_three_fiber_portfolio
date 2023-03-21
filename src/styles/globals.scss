@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #f2cd5d;
+  --secondary-color: rgb(161, 158, 248);
+
+  --primaryBg-color: rgb(48, 48, 53);
+  --secondaryBg-color: rgb(53, 54, 59);
+  --text-color: #ffffff;
+
+  --shadow-color: rgba(207, 196, 255, 0.2);
+
+  --black-color: rgb(53, 54, 59);
+
+  --btn-image: url('../assets/dark_wave.png');
+
+  /* 1rem = 10px; 10px/16px - 62.5% */
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--primaryBg-color);
+
+  transition: all 1s;
+}
+
+.light_theme {
+  --primary-color: #f2cd5d;
+  --secondary-color: rgb(142, 139, 238);
+
+  --primaryBg-color: #f8f8f8;
+  --secondaryBg-color: #ffffff;
+  --text-color: rgb(53, 54, 59);
+
+  --shadow-color: rgba(0, 0, 0, 0.07);
+
+  --btn-image: url('../assets/light_wave.png');
+
+  color: var(--text-color) !important;
+  background-color: var(--primaryBg-color) !important;
+
+  transition: all 1s;
+}

@@ -1,0 +1,52 @@
+@use '../Variables.module.scss' as screen;
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+
+  & .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.center_section {
+  justify-content: center;
+  padding: 20rem 13rem;
+
+  @media screen and (min-width: screen.$xl) {
+    padding: 20rem 18rem;
+  }
+
+  @media screen and (max-width: screen.$sm) {
+    padding: 10rem 10rem;
+  }
+
+  @media screen and (max-width: screen.$ss) {
+    padding: 10rem 5rem;
+  }
+
+  @media screen and (max-width: screen.$xs) {
+    padding: 10rem 5rem;
+  }
+}
+
+.primary_bg {
+  background-color: var(--primaryBg-color);
+}
+
+.secondary_bg {
+  background-color: var(--secondaryBg-color);
+}
+
+// $xl: 1500px;
+// $lg: 1200px;
+// $md: 1060px;
+// $sm: 768px;
+// $ss: 620px;
+// $xs: 480px;

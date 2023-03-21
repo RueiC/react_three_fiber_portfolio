@@ -1,0 +1,17 @@
+.title_box {
+  & p {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  & h2 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+}
+
+.card_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}

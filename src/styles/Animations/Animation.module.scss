@@ -1,0 +1,52 @@
+@keyframes float {
+  0% {
+    transform: translateY(8px) rotate(5deg);
+  }
+  60% {
+    transform: translateY(0) rotate(1.5deg);
+  }
+  100% {
+    transform: translateY(-5px) rotate(-5deg);
+  }
+}
+
+@keyframes up_and_down {
+  0% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes wavy {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 118px;
+  }
+}
+
+@keyframes fly_in {
+  0% {
+    left: -90%;
+    top: 80%;
+  }
+  50% {
+    left: 15%;
+    top: -30%;
+  }
+  100% {
+    left: -10%;
+    top: -10%;
+  }
+}
+
+$animation_float: float;
+$animation_wavy: wavy;
+$animation_fly_in: fly_in;
+$animation_up_and_down: up_and_down;

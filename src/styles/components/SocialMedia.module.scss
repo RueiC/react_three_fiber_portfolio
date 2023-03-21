@@ -1,0 +1,91 @@
+@use '../Animations/Animation.module.scss' as styles;
+@use '../Variables.module.scss' as screen;
+
+.social_media {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  z-index: 50;
+
+  @media screen and (max-width: screen.$ss) {
+    display: none;
+  }
+
+  @media screen and (max-width: screen.$xs) {
+    display: none;
+  }
+
+  & .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondaryBg-color);
+    margin: 0.25rem 0;
+    border: 1.2px solid rgb(181, 181, 181);
+    overflow: hidden;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background-color: var(--primary-color);
+      left: -90%;
+      top: 80%;
+      transform: rotate(45deg);
+    }
+
+    & svg {
+      font-size: 1.6rem;
+      transition: all 0.2s;
+      width: 75%;
+      height: 75%;
+      color: var(--text-color);
+    }
+
+    & img {
+      width: 75%;
+      height: 75%;
+    }
+
+    &:hover:before {
+      animation: styles.$animation_fly_in 0.7s 1 forwards;
+    }
+
+    &:hover svg {
+      transform: scale(1.2);
+      color: #f1f1f1;
+    }
+
+    &:hover img {
+      z-index: 1;
+      opacity: 0.6;
+    }
+
+    // @media screen and (min-width: 2000px) {
+    //   width: 70px;
+    //   height: 70px;
+
+    //   margin: 0.5rem 0;
+
+    //   svg {
+    //     width: 30px;
+    //     height: 30px;
+    //   }
+    // }
+  }
+}

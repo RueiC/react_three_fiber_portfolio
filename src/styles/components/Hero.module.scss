@@ -1,0 +1,457 @@
+@use '../Animations/Animation.module.scss' as styles;
+@use '../Variables.module.scss' as screen;
+
+.section {
+  & .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 15rem;
+
+    @media screen and (min-width: screen.$xl) {
+      justify-content: center;
+      padding: 10rem 18%;
+    }
+
+    @media screen and (max-width: screen.$md) {
+      padding: 10rem 15rem;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: screen.$sm) {
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem 0;
+    }
+
+    @media screen and (max-width: screen.$ss) {
+      flex-direction: column;
+      padding: 5rem;
+      align-items: center;
+    }
+
+    @media screen and (max-width: screen.$xs) {
+      flex-direction: column;
+      padding: 5rem;
+      align-items: center;
+    }
+
+    & .left_box {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 3rem;
+      flex: 1;
+
+      // @media screen and (max-width: screen.$xs) {
+      //   flex: 0;
+      // }
+
+      & .textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        // gap: 1.5rem;
+
+        & .title {
+          position: relative;
+          font-size: 2rem;
+          text-transform: uppercase;
+          // line-height: 0;
+
+          @media screen and (min-width: screen.$xl) {
+            font-size: 2.5rem;
+          }
+
+          @media screen and (max-width: screen.$md) {
+            font-size: 1.8rem;
+          }
+
+          @media screen and (max-width: screen.$sm) {
+            font-size: 1.8rem;
+          }
+
+          @media screen and (max-width: screen.$ss) {
+            font-size: 1.8rem;
+          }
+
+          @media screen and (max-width: screen.$xs) {
+            font-size: 1.8rem;
+          }
+
+          &:before {
+            content: '_';
+            position: absolute;
+            top: 0;
+            right: -20px;
+          }
+        }
+
+        & h1 {
+          font-size: 7rem;
+          font-weight: 900;
+          // line-height: 0;
+
+          @media screen and (min-width: screen.$xl) {
+            font-size: 8.3rem;
+          }
+
+          @media screen and (max-width: screen.$md) {
+            font-size: 5rem;
+          }
+
+          @media screen and (max-width: screen.$sm) {
+            font-size: 5rem;
+          }
+
+          @media screen and (max-width: screen.$ss) {
+            font-size: 5rem;
+          }
+
+          @media screen and (max-width: screen.$xs) {
+            font-size: 5rem;
+          }
+        }
+
+        & strong {
+          color: var(--secondary-color);
+          font-weight: 800;
+        }
+
+        & div {
+          font-size: 1.7rem;
+          line-height: 3.4rem;
+          letter-spacing: 2px;
+
+          @media screen and (min-width: screen.$xl) {
+            font-size: 2rem;
+            line-height: 4.4rem;
+          }
+
+          @media screen and (max-width: screen.$md) {
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+          }
+
+          @media screen and (max-width: screen.$sm) {
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+          }
+
+          @media screen and (max-width: screen.$ss) {
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+          }
+
+          @media screen and (max-width: screen.$xs) {
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+          }
+
+          // & span:before {
+          //   content: '_';
+          // }
+        }
+      }
+
+      & .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 1.3rem;
+
+        & .link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          text-decoration: none;
+          color: var(--text-color);
+          width: 30px;
+          height: 30px;
+          border: 1px solid var(--text-color);
+          border-radius: 50%;
+          transition: all 1s;
+
+          @media screen and (min-width: screen.$xl) {
+            width: 35px;
+            height: 35px;
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
+
+          & svg {
+            width: 100%;
+            height: 100%;
+          }
+
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      & .btns {
+        display: flex;
+        gap: 2.8rem;
+
+        & a {
+          text-decoration: none;
+          text-transform: uppercase;
+          width: 184px;
+          height: 46px;
+          border-radius: 5rem;
+          text-align: center;
+          line-height: 46px;
+          cursor: pointer;
+          transition: all 1s;
+
+          @media screen and (min-width: screen.$xl) {
+            font-size: 1.3rem;
+            padding: 0 1.3rem;
+          }
+        }
+
+        & .download {
+          position: relative;
+          color: var(--secondary-color);
+          border: 1.5px solid var(--secondary-color);
+          overflow: hidden;
+          transition-delay: 0.2s;
+          z-index: 1;
+
+          & .wave {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: calc(100% + 46px);
+            background-color: var(--secondary-color);
+            transition: all 1s;
+            z-index: -1;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: -46px;
+              left: 0;
+              width: 100%;
+              height: 46px;
+              background: var(--btn-image);
+              animation: styles.$animation_wavy 0.5s linear infinite;
+              z-index: -1;
+            }
+          }
+
+          &:hover .wave {
+            top: 0;
+          }
+
+          &:hover {
+            // color: var(--text-color);
+            color: #ffffff;
+            transform: scale(1.03) translateY(-1px);
+          }
+        }
+
+        & .contact {
+          position: relative;
+          color: var(--text-color);
+          background-color: var(--secondaryBg-color);
+          border: 1px solid var(--text-color);
+          transition: all 1s;
+
+          &:hover {
+            transform: scale(1.03) translateY(-1px);
+          }
+        }
+      }
+    }
+
+    & .right_box {
+      position: relative;
+      flex: 1;
+
+      @media screen and (min-width: screen.$xl) {
+        flex: 0.75;
+      }
+
+      & .shape {
+        width: 420px;
+        height: 420px;
+
+        @media screen and (min-width: screen.$xl) {
+          width: 540px;
+          height: 540px;
+        }
+      }
+
+      & .balls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & .ball {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          animation: styles.$animation_float 1.7s linear infinite;
+          animation-direction: alternate;
+
+          &:nth-child(1) {
+            top: 200px;
+            right: 70px;
+            animation-delay: 0;
+
+            @media screen and (min-width: screen.$xl) {
+              top: 150px;
+              right: 60px;
+            }
+
+            @media screen and (max-width: screen.$md) {
+              top: 40px;
+              right: 70px;
+            }
+
+            @media screen and (max-width: screen.$sm) {
+              top: 40px;
+              right: 70px;
+            }
+
+            @media screen and (max-width: screen.$ss) {
+              top: 40px;
+              right: 70px;
+            }
+
+            @media screen and (max-width: screen.$xs) {
+              top: 40px;
+              right: 70px;
+            }
+          }
+
+          &:nth-child(2) {
+            bottom: -50px;
+            left: 0;
+            animation-delay: 0.1s;
+
+            @media screen and (min-width: screen.$xl) {
+              bottom: 20px;
+              left: 10px;
+            }
+
+            @media screen and (max-width: screen.$md) {
+              bottom: 20px;
+              left: -13px;
+            }
+
+            @media screen and (max-width: screen.$sm) {
+              bottom: 20px;
+              left: -13px;
+            }
+
+            @media screen and (max-width: screen.$ss) {
+              bottom: 20px;
+              left: -13px;
+            }
+
+            @media screen and (max-width: screen.$xs) {
+              bottom: 20px;
+              left: -13px;
+            }
+          }
+
+          &:nth-child(3) {
+            right: 0;
+            animation-delay: 0.5s;
+
+            @media screen and (min-width: screen.$xl) {
+              right: -10px;
+              bottom: 50px;
+            }
+
+            @media screen and (max-width: screen.$md) {
+              right: -10px;
+              bottom: 30px;
+            }
+
+            @media screen and (max-width: screen.$sm) {
+              right: -10px;
+              bottom: 30px;
+            }
+
+            @media screen and (max-width: screen.$ss) {
+              right: -10px;
+              bottom: 30px;
+            }
+
+            @media screen and (max-width: screen.$xs) {
+              right: -10px;
+              bottom: 30px;
+            }
+          }
+
+          &:nth-child(4) {
+            left: 150px;
+            bottom: -20px;
+            animation-delay: 0.3s;
+
+            @media screen and (min-width: screen.$xl) {
+              left: 150px;
+              bottom: -20px;
+            }
+
+            @media screen and (max-width: screen.$md) {
+              left: 100px;
+              bottom: -20px;
+            }
+
+            @media screen and (max-width: screen.$sm) {
+              left: 100px;
+              bottom: -20px;
+            }
+
+            @media screen and (max-width: screen.$ss) {
+              left: 100px;
+              bottom: -20px;
+            }
+
+            @media screen and (max-width: screen.$xs) {
+              left: 100px;
+              bottom: -20px;
+            }
+          }
+
+          &:nth-child(5) {
+            bottom: -90px;
+            right: 55px;
+            animation-delay: 0.2s;
+
+            @media screen and (max-width: screen.$md) {
+              bottom: 90px;
+              right: 55px;
+            }
+
+            @media screen and (max-width: screen.$sm) {
+              bottom: 90px;
+              right: 55px;
+            }
+
+            @media screen and (max-width: screen.$ss) {
+              bottom: 90px;
+              right: 55px;
+            }
+
+            @media screen and (max-width: screen.$xs) {
+              bottom: 90px;
+              right: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

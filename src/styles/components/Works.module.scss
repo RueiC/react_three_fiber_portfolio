@@ -1,0 +1,79 @@
+@use '../Variables.module.scss' as screen;
+
+.section {
+  & .title_box {
+    font-family: 'popping';
+
+    & p {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    & h2 {
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+
+  & .text_box {
+    display: flex;
+    width: 50%;
+
+    @media screen and (min-width: screen.$xl) {
+    }
+
+    @media screen and (max-width: screen.$md) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: screen.$sm) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: screen.$ss) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: screen.$xs) {
+      width: 100%;
+    }
+
+    & p {
+      font-size: 1.7rem;
+      line-height: 3.1rem;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  & .project_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    margin-top: 3.5rem;
+
+    @media screen and (max-width: screen.$lg) {
+      gap: 3rem;
+    }
+
+    @media screen and (max-width: screen.$md) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+
+    @media screen and (max-width: screen.$sm) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: screen.$ss) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: screen.$xs) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
