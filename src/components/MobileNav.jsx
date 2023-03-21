@@ -37,9 +37,9 @@ const MobileNav = ({ toggleTheme }) => {
         ) : (
           <div className={styles.icon}>
             {isDarkTheme ? (
-              <BsFillSunFill onClick={toggleTheme} />
-            ) : (
               <BsFillMoonStarsFill onClick={toggleTheme} />
+            ) : (
+              <BsFillSunFill onClick={toggleTheme} />
             )}
             <AiOutlineMenu onClick={() => setToggleMenu(true)} />
           </div>

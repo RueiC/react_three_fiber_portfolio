@@ -44,9 +44,9 @@ const Navbar = ({ toggleTheme }) => {
             </div> */}
             <div className={styles.icon}>
               {isDarkTheme ? (
-                <BsFillSunFill onClick={toggleTheme} />
-              ) : (
                 <BsFillMoonStarsFill onClick={toggleTheme} />
+              ) : (
+                <BsFillSunFill onClick={toggleTheme} />
               )}
             </div>
           </div>

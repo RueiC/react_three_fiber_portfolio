@@ -21,7 +21,8 @@ const StarWrapper = (Component, idName) =>
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
       >
-        <SocialMedia />
+        {idName !== 'hero' ? <SocialMedia /> : null}
+
         <div className={`${styles.wrapper} ${sectonStyles}`}>
           <Component />
         </div>

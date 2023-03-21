@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10rem 15rem;
+    padding: 3rem 15rem;
 
     @media screen and (min-width: screen.$xl) {
       justify-content: center;
@@ -15,7 +15,7 @@
     }
 
     @media screen and (max-width: screen.$md) {
-      padding: 10rem 15rem;
+      padding: 3rem 15rem;
       justify-content: center;
     }
 
