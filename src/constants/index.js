@@ -148,7 +148,7 @@ const projects = [
       },
     ],
     image: quizler,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/RueiC/vue3_quizler_app',
   },
   {
     name: 'Pincture',
@@ -165,7 +165,7 @@ const projects = [
       },
     ],
     image: pincture,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/RueiC/next_js_pincture_app',
   },
   {
     name: 'Sprout',
@@ -182,7 +182,7 @@ const projects = [
       },
     ],
     image: sprout,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/RueiC/next_js_sprout_store/tree/main',
   },
 ];
 

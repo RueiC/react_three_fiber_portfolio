@@ -2,12 +2,18 @@ import React, { useState } from 'react';
 import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 
-// import { styles } from '../styles';
 import { github, logo_104 } from '../assets';
 import styles from '../styles/components/ProjectCard.module.scss';
 import { fadeIn } from '../utils/motion';
 
-const ProjectCard = ({ index, name, description, tags, image }) => {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -34,7 +40,7 @@ const ProjectCard = ({ index, name, description, tags, image }) => {
             <div className={styles.hover_box}>
               <a
                 className={styles.source_link}
-                href='https://github.com/RueiC'
+                href={source_code_link}
                 target='_blank'
               >
                 <img src={github.src} alt='github logo' />
