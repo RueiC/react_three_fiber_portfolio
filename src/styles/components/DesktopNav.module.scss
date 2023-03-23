@@ -1,4 +1,5 @@
 @use '../Variables.module.scss' as screen;
+@use '../Animations/Animation.module.scss' as animation;
 
 .nav {
   display: flex;
@@ -39,10 +40,14 @@
       list-style: none;
 
       & a {
+        display: inline-block;
         color: var(--text-color);
         font-size: 1.6rem;
         text-decoration: none;
         cursor: pointer;
+
+        opacity: 0;
+        animation: animation.$animation_slide_top 0.5s ease forwards;
       }
 
       & div {

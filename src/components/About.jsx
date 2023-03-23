@@ -12,7 +12,6 @@ const About = () => {
 
   const toggleContent = (e) => {
     const id = e.target.id;
-    let formattedText = '';
 
     if (id === 'background') setAbout('background');
     if (id === 'myExperience') setAbout('myExperience');

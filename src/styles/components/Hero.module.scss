@@ -1,4 +1,4 @@
-@use '../Animations/Animation.module.scss' as styles;
+@use '../Animations/Animation.module.scss' as animation;
 @use '../Variables.module.scss' as screen;
 
 .section {
@@ -60,6 +60,10 @@
           text-transform: uppercase;
           // line-height: 0;
 
+          opacity: 0;
+          animation: animation.$animation_slide_bottom 1s ease forwards;
+          animation-delay: 1.5s;
+
           @media screen and (min-width: screen.$xl) {
             font-size: 2.5rem;
           }
@@ -93,6 +97,10 @@
           font-weight: 900;
           // line-height: 0;
 
+          opacity: 0;
+          animation: animation.$animation_slide_bottom 1s ease forwards;
+          animation-delay: 0.7s;
+
           @media screen and (min-width: screen.$xl) {
             font-size: 8.3rem;
           }
@@ -123,6 +131,10 @@
           font-size: 1.7rem;
           line-height: 3.4rem;
           letter-spacing: 2px;
+
+          opacity: 0;
+          animation: animation.$animation_slide_right 1s ease forwards;
+          animation-delay: 1.2s;
 
           @media screen and (min-width: screen.$xl) {
             font-size: 2rem;
@@ -175,10 +187,15 @@
           border-radius: 50%;
           transition: all 1s;
 
+          opacity: 0;
+          animation: animation.$animation_slide_right 1s ease forwards;
+          animation-delay: 1.5s;
+
           @media screen and (min-width: screen.$xl) {
             width: 35px;
             height: 35px;
           }
+
           &:hover {
             transform: scale(1.1);
           }
@@ -209,6 +226,10 @@
           line-height: 46px;
           cursor: pointer;
           transition: all 1s;
+
+          opacity: 0;
+          animation: animation.$animation_slide_right 1s ease forwards;
+          animation-delay: 1.7s;
 
           @media screen and (min-width: screen.$xl) {
             font-size: 1.3rem;
@@ -242,7 +263,7 @@
               width: 100%;
               height: 46px;
               background: var(--btn-image);
-              animation: styles.$animation_wavy 0.5s linear infinite;
+              animation: animation.$animation_wavy 0.5s linear infinite;
               z-index: -1;
             }
           }
@@ -299,7 +320,7 @@
           position: absolute;
           width: 150px;
           height: 150px;
-          animation: styles.$animation_float 1.7s linear infinite;
+          animation: animation.$animation_float 1.7s linear infinite;
           animation-direction: alternate;
 
           &:nth-child(1) {

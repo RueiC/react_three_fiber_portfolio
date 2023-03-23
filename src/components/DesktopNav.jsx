@@ -33,9 +33,14 @@ const Navbar = ({ toggleTheme }) => {
         </a>
 
         <ul className={styles.navItems}>
-          {navLinks.map((nav) => (
+          {navLinks.map((nav, i) => (
             <li key={nav.id}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a
+                href={`#${nav.id}`}
+                style={{ animationDelay: `calc(0.2s * ${i + 1})` }}
+              >
+                {nav.title}
+              </a>
             </li>
           ))}
           <div>

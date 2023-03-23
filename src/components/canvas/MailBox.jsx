@@ -1,10 +1,10 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
-const MailBox = ({ isMobile }) => {
+const MailBox = () => {
   const mailBox = useGLTF('./mail_box/scene.gltf');
 
   return (
@@ -13,39 +13,12 @@ const MailBox = ({ isMobile }) => {
       <pointLight position={[20, 0, 0]} color='white' intensity={1} />
       <hemisphereLight intensity={2} groundColor='white' />
 
-      <primitive
-        object={mailBox.scene}
-        scale={isMobile ? 0.7 : 4.5}
-        position={isMobile ? [0, -3, -2.2] : [0, 0.5, 0]}
-      />
+      <primitive object={mailBox.scene} scale={4.5} position={[0, 0.5, 0]} />
     </mesh>
   );
 };
 
 const MailBoxCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
-
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    };
-  }, []);
-
   return (
     <Canvas
       frameloop='demand'
@@ -65,7 +38,7 @@ const MailBoxCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <MailBox isMobile={isMobile} />
+        <MailBox />
       </Suspense>
 
       <Preload all />
