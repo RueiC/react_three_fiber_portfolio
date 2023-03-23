@@ -35,7 +35,7 @@ const Hero = () => {
               <br />
               設計背景出身，可減少與設計師溝通的成本
               <br />
-              學習的技術包含 <span ref={el}></span> 等
+              學習的技術包含 <span ref={el}></span>
               <br />
               具備基礎網頁開發能力
             </div>

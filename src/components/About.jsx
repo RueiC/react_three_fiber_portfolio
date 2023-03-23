@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 import { SectionWrapper } from '../hoc';
 import styles from '../styles/components/About.module.scss';
-import { aboutContent } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { about_me } from '../assets/index';
 
@@ -22,7 +21,7 @@ const About = () => {
   return (
     <div>
       <motion.div className={styles.title_box} variants={textVariant()}>
-        <p>Introduction _</p>
+        <p>Introduction</p>
         <h2>About Me</h2>
       </motion.div>
 

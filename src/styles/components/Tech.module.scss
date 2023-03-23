@@ -1,4 +1,4 @@
-@use '../Animations/Animation.module.scss' as styles;
+@use '../Animations/Animation.module.scss' as animation;
 @use '../Variables.module.scss' as screen;
 
 .container {
@@ -11,8 +11,20 @@
     width: 100%;
 
     & p {
+      position: relative;
+      display: inline-block;
       font-size: 2rem;
       text-transform: uppercase;
+
+      &:before {
+        content: '_';
+        position: absolute;
+        top: 0;
+        right: -20px;
+        opacity: 0;
+
+        animation: animation.$animation_typed 0.5s ease infinite alternate;
+      }
     }
 
     & h2 {
@@ -42,7 +54,7 @@
     & .ball {
       width: 13rem;
       height: 13rem;
-      animation: styles.$animation_float 1.7s linear infinite;
+      animation: animation.$animation_float 1.7s linear infinite;
       animation-direction: alternate;
 
       @media screen and (min-width: screen.$xl) {

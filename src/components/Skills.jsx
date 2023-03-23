@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <div className={styles.container}>
       <motion.div className={styles.title_box} variants={textVariant()}>
-        <p>My skills _</p>
+        <p>My skills</p>
         <h2>Front-end Stacks</h2>
       </motion.div>
 

@@ -4,8 +4,20 @@
 
 .title_box {
   & p {
+    position: relative;
+    display: inline-block;
     font-size: 2rem;
     text-transform: uppercase;
+
+    &:before {
+      content: '_';
+      position: absolute;
+      top: 0;
+      right: -20px;
+      opacity: 0;
+
+      animation: animations.$animation_typed 0.5s ease infinite alternate;
+    }
   }
 
   & h2 {

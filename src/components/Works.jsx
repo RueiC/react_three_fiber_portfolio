@@ -11,7 +11,7 @@ const Works = () => {
   return (
     <div className={styles.section}>
       <motion.div className={styles.title_box} variants={textVariant()}>
-        <p>My work _</p>
+        <p>My work</p>
         <h2>Projects</h2>
       </motion.div>
 

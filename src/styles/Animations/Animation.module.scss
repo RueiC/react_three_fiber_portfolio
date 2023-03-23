@@ -90,6 +90,15 @@
   }
 }
 
+@keyframes typed {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 $animation_float: float;
 $animation_wavy: wavy;
 $animation_fly_in: fly_in;
@@ -99,3 +108,4 @@ $animation_slide_left: slide_left;
 $animation_slide_right: slide_right;
 $animation_slide_top: slide_top;
 $animation_slide_bottom: slide_bottom;
+$animation_typed: typed;

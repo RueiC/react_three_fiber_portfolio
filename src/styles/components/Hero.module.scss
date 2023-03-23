@@ -89,6 +89,9 @@
             position: absolute;
             top: 0;
             right: -20px;
+            opacity: 0;
+
+            animation: animation.$animation_typed 0.5s ease infinite alternate;
           }
         }
 
@@ -138,6 +141,9 @@
 
           & span {
             color: var(--secondary-color);
+            font-size: 1.9rem;
+            font-weight: 600;
+            font-family: 'Noto Sans TC';
           }
 
           @media screen and (min-width: screen.$xl) {

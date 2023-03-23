@@ -70,7 +70,7 @@ const Contact = () => {
         className={styles.form_box}
         variants={slideIn('left', 'tween', 0.2, 1)}
       >
-        <p>Get in touch _</p>
+        <p>Get in touch</p>
         <h2>Contact</h2>
 
         <form ref={formRef} onSubmit={handleSubmit}>
