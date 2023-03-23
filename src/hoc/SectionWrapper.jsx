@@ -26,6 +26,7 @@ const StarWrapper = (Component, idName) =>
         <div className={`${styles.wrapper} ${sectonStyles}`}>
           <Component />
         </div>
+
         <NavigationDots active={idName} />
       </motion.section>
     );

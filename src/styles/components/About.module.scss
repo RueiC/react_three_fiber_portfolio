@@ -47,6 +47,9 @@
       margin-top: 2rem;
       font-size: 17px;
       line-height: 35px;
+      opacity: 0;
+
+      animation: animations.$animation_slide_top 1s ease forwards;
     }
   }
 

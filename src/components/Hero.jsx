@@ -1,4 +1,6 @@
+import React, { useEffect, useRef } from 'react';
 import { AiFillGithub } from 'react-icons/ai';
+import Typed from 'typed.js';
 
 import styles from '../styles/components/Hero.module.scss';
 import { SectionWrapper } from '../hoc';
@@ -7,6 +9,20 @@ import { heroBalls } from '../constants/index';
 import { logo_104 } from '../assets/index';
 
 const Hero = () => {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Next.js', 'Vue 3', 'TypeScript', 'Tailwind CSS'],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 800,
+      loop: true,
+    });
+
+    return () => typed.destroy();
+  }, []);
+
   return (
     <div className={styles.section}>
       <div className={styles.container}>
@@ -19,12 +35,7 @@ const Hero = () => {
               <br />
               設計背景出身，可減少與設計師溝通的成本
               <br />
-              學習的技術包含{' '}
-              <strong>
-                Next.js<span></span>
-              </strong>
-              、<strong>React</strong>、<strong>Vue 3</strong>、
-              <strong>Typescript</strong> 等
+              學習的技術包含 <span ref={el}></span> 等
               <br />
               具備基礎網頁開發能力
             </div>

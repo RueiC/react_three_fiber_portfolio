@@ -30,6 +30,7 @@
     "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.149.0",
+    "typed.js": "^2.0.132",
     "typescript": "5.0.2"
   },
   "devDependencies": {

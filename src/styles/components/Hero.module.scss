@@ -136,6 +136,10 @@
           animation: animation.$animation_slide_right 1s ease forwards;
           animation-delay: 1.2s;
 
+          & span {
+            color: var(--secondary-color);
+          }
+
           @media screen and (min-width: screen.$xl) {
             font-size: 2rem;
             line-height: 4.4rem;
@@ -160,10 +164,6 @@
             font-size: 1.5rem;
             line-height: 3.2rem;
           }
-
-          // & span:before {
-          //   content: '_';
-          // }
         }
       }
 

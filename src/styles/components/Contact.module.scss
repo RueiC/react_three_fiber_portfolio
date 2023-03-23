@@ -59,8 +59,11 @@
           border: none;
           font-weight: 500;
           background-color: var(--primaryBg-color);
+          color: var(--text-color);
 
           &::placeholder {
+            color: var(--text-color);
+            opacity: 0.5;
           }
         }
       }
