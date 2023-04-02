@@ -55,6 +55,7 @@
 
   & .text_box {
     margin-top: 2rem;
+    letter-spacing: 1.2px;
 
     & h3 {
       font-weight: 800;
@@ -62,8 +63,9 @@
     }
 
     & p {
-      font-size: 1.7rem;
-      line-height: 25px;
+      font-size: 1.6rem;
+      line-height: 30px;
+      opacity: 0.9;
     }
   }
 
@@ -77,7 +79,7 @@
       font-size: 12px;
       background-color: var(--primary-color);
       color: var(--black-color);
-      padding: 10px 17px;
+      padding: 9px 17px;
       border-radius: 50px;
       transition: all 0.3s;
       cursor: default;

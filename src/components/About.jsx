@@ -13,7 +13,7 @@ const About = () => {
     const id = e.target.id;
 
     if (id === 'background') setAbout('background');
-    if (id === 'myExperience') setAbout('myExperience');
+    if (id === 'experiences') setAbout('experiences');
 
     if (id === 'advantages') setAbout('advantages');
   };
@@ -43,7 +43,7 @@ const About = () => {
             </p>
           ) : null}
 
-          {about === 'myExperience' ? (
+          {about === 'experiences' ? (
             <p>
               在自學期間，我不僅學習了 HTML、CSS、JavaScript{' '}
               的基礎知識，還對新技術進行了探索和嘗試。目前專注於學習{' '}
@@ -110,16 +110,16 @@ const About = () => {
 
           <div
             className={`${styles.toggle_card} ${
-              about === 'myExperience' ? styles.selected : ''
+              about === 'experiences' ? styles.selected : ''
             }`}
           >
             <input
-              id='myExperience'
+              id='experiences'
               type='radio'
               name='toggle'
-              value='myExperience'
+              value='Experiences'
             />
-            <label htmlFor='myExperience'>My Experience</label>
+            <label htmlFor='experiences'>My Experience</label>
           </div>
 
           <div

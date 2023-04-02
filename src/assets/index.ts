@@ -20,6 +20,7 @@ import threejs from './tech/threejs.svg';
 import quizler from './quizler.png';
 import sprout from './sprout.png';
 import pincture from './pincture.png';
+import r3f from './r3f_portfolio.png';
 
 import about_me from './about_me.png';
 
@@ -55,4 +56,5 @@ export {
   company,
   code,
   logo_104,
+  r3f,
 };

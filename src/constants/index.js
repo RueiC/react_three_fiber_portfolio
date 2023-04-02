@@ -13,6 +13,7 @@ import {
   yzu,
   code,
   company,
+  r3f,
 } from '../assets';
 
 export const navLinks = [
@@ -136,8 +137,28 @@ const experiences = [
 
 const projects = [
   {
+    name: '3D Portfolio',
+    description:
+      '使用 React Three Fiber 開發了一個作品集網站，使用 SASS 和 Framer Motion 實現流暢的用戶體驗',
+    tags: [
+      {
+        name: 'R3F',
+      },
+      {
+        name: 'Next.js',
+      },
+      {
+        name: 'SASS',
+      },
+    ],
+    image: r3f,
+    source_code_link:
+      'https://github.com/RueiC/react_three_fiber_portfolio/tree/main',
+  },
+  {
     name: 'Quizler',
-    description: '通過單詞卡學習新語言',
+    description:
+      '使用 Vue 3, TypeScript 開發的閃卡應用程式，它提高了用戶的語言學習效率以及良好的使用者體驗',
     tags: [
       {
         name: 'vue 3',
@@ -153,25 +174,9 @@ const projects = [
     source_code_link: 'https://github.com/RueiC/vue3_quizler_app',
   },
   {
-    name: 'Pincture',
-    description: '圖片分享收藏平台',
-    tags: [
-      {
-        name: 'next.js',
-      },
-      {
-        name: 'typescript',
-      },
-      {
-        name: 'tailwind css',
-      },
-    ],
-    image: pincture,
-    source_code_link: 'https://github.com/RueiC/next_js_pincture_app',
-  },
-  {
     name: 'Sprout',
-    description: '電商購物網站',
+    description:
+      '使用 Next.js, TypeScript 開發了一個電商網站，用戶能夠將商品添加到他們的購物車、留下評論和評價產品',
     tags: [
       {
         name: 'next.js',
