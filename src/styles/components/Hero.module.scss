@@ -41,6 +41,7 @@
       display: flex;
       flex-direction: column;
       align-items: start;
+      justify-content: center;
       gap: 3rem;
       flex: 1;
 
@@ -55,14 +56,17 @@
         // gap: 1.5rem;
 
         & .title {
+          display: block;
           position: relative;
           font-size: 2rem;
           text-transform: uppercase;
-          // line-height: 0;
+          font-family: 'Poppins';
 
           opacity: 0;
           animation: animation.$animation_slide_bottom 1s ease forwards;
           animation-delay: 1.5s;
+          line-height: 0;
+          margin-bottom: 2.2rem;
 
           @media screen and (min-width: screen.$xl) {
             font-size: 2.5rem;
@@ -96,13 +100,15 @@
         }
 
         & h1 {
+          display: block;
           font-size: 7rem;
-          font-weight: 900;
-          // line-height: 0;
+          font-weight: 700;
+          font-family: 'Poppins';
 
           opacity: 0;
           animation: animation.$animation_slide_bottom 1s ease forwards;
           animation-delay: 0.7s;
+          line-height: 0;
 
           @media screen and (min-width: screen.$xl) {
             font-size: 8.3rem;
@@ -128,13 +134,17 @@
         & strong {
           color: var(--secondary-color);
           font-weight: 800;
+          font-family: 'Poppins';
         }
 
         & ul {
           font-size: 1.7rem;
-          line-height: 3.4rem;
+          line-height: 3.5rem;
           letter-spacing: 2px;
-          padding-left: 22px;
+          list-style: none;
+          padding-left: 0;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
 
           opacity: 0;
           animation: animation.$animation_slide_right 1s ease forwards;
@@ -233,6 +243,9 @@
           line-height: 46px;
           cursor: pointer;
           transition: all 1s;
+          font-family: 'Poppins';
+          font-size: 1.3rem;
+          font-weight: 500;
 
           opacity: 0;
           animation: animation.$animation_slide_right 1s ease forwards;

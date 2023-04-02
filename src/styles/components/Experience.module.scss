@@ -1,6 +1,7 @@
 @use '../Animations/Animation.module.scss' as animation;
 
 .title_box {
+  font-family: 'Poppins';
   & p {
     position: relative;
     display: inline-block;
@@ -20,7 +21,7 @@
 
   & h2 {
     font-size: 5rem;
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 

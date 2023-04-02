@@ -23,6 +23,7 @@
     background-color: var(--secondaryBg-color);
     width: 100%;
     box-shadow: 2px 2px 10px 5px var(--shadow-color);
+    font-family: 'Poppins';
 
     & p {
       position: relative;
@@ -43,7 +44,7 @@
 
     & h2 {
       font-size: 5rem;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     & form {
@@ -52,6 +53,7 @@
       gap: 3rem;
       margin-top: 3rem;
       width: 100%;
+      font-family: 'Noto Sans TC';
 
       & label {
         display: flex;

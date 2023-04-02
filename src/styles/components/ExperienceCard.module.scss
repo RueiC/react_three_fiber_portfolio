@@ -14,10 +14,11 @@
 }
 
 .title_box {
+  font-family: 'Noto Sans TC';
   & h3 {
     color: var(--text-color);
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
   }
 
   & p {
@@ -34,12 +35,12 @@
   margin-left: 1rem;
   padding-left: 8px;
   opacity: 0.8;
+  line-height: 27px;
 
   & li {
     color: var(--text-color);
     font-size: 14px;
     padding-left: 5px;
     letter-spacing: 0.05em;
-    line-height: 20px;
   }
 }

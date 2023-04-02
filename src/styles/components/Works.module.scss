@@ -3,7 +3,7 @@
 
 .section {
   & .title_box {
-    font-family: 'popping';
+    font-family: 'Poppins';
 
     & p {
       position: relative;
@@ -24,13 +24,15 @@
 
     & h2 {
       font-size: 5rem;
-      font-weight: bold;
+      font-weight: 700;
     }
   }
 
   & .text_box {
     display: flex;
     width: 50%;
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
 
     @media screen and (min-width: screen.$xl) {
     }
@@ -58,13 +60,15 @@
 
       & strong {
         color: var(--secondary-color);
+        font-family: 'Poppins';
+        font-weight: 700;
       }
     }
   }
 
   & .project_cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 6rem;
     margin-top: 3.5rem;
 
@@ -74,7 +78,7 @@
 
     @media screen and (max-width: screen.$md) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 3rem;
     }
 

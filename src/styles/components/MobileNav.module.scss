@@ -4,6 +4,8 @@
   display: none;
   z-index: 20;
   padding: 1.2rem 2.5rem;
+  font-family: 'Poppins';
+  font-weight: 500;
 
   @media screen and (max-width: screen.$sm) {
     display: flex;

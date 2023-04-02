@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import { RiEnglishInput } from 'react-icons/ri';
 import { AiOutlineMenu, AiFillCloseCircle } from 'react-icons/ai';

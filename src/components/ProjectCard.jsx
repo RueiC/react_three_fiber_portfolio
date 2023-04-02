@@ -18,12 +18,13 @@ const ProjectCard = ({
 
   return (
     <motion.div
+      className={styles.container}
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <Tilt
-        className={styles.container}
+        className={styles.tilt}
         options={{
           max: 45,
           scale: 1,
