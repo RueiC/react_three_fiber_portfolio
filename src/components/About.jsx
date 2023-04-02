@@ -15,7 +15,7 @@ const About = () => {
     if (id === 'background') setAbout('background');
     if (id === 'experiences') setAbout('experiences');
 
-    if (id === 'advantages') setAbout('advantages');
+    if (id === 'summarize') setAbout('summarize');
   };
 
   return (
@@ -72,7 +72,7 @@ const About = () => {
             </p>
           ) : null}
 
-          {about === 'advantages' ? (
+          {about === 'summarize' ? (
             <p>
               <ul>
                 <li>
@@ -124,16 +124,16 @@ const About = () => {
 
           <div
             className={`${styles.toggle_card} ${
-              about === 'advantages' ? styles.selected : ''
+              about === 'summarize' ? styles.selected : ''
             }`}
           >
             <input
-              id='advantages'
+              id='summarize'
               type='radio'
               name='toggle'
-              value='advantages'
+              value='summarize'
             />
-            <label htmlFor='advantages'>Conclusion</label>
+            <label htmlFor='summarize'>Summarize</label>
           </div>
         </div>
         <img src={about_me.src} alt='people' />

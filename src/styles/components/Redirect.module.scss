@@ -1,3 +1,5 @@
+@use '../Variables.module.scss' as screen;
+
 .btn {
   position: fixed;
   bottom: 35px;
@@ -12,6 +14,16 @@
   border-radius: 50%;
   transition: all 0.5s;
   cursor: pointer;
+
+  @media screen and (max-width: screen.$sm) {
+    bottom: 35px;
+    right: 35px;
+  }
+
+  @media screen and (max-width: screen.$xs) {
+    bottom: 35px;
+    right: 35px;
+  }
 
   &:hover {
     transform: scale(1.2);

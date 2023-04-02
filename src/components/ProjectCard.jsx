@@ -46,14 +46,6 @@ const ProjectCard = ({
               >
                 <img src={github.src} alt='github logo' />
               </a>
-
-              <a
-                className={styles.source_link}
-                href='https://pda.104.com.tw/profile/share/5dy0b6zrJIrP9jdBNASsm6K4YNYnRJTG'
-                target='_blank'
-              >
-                <img src={logo_104.src} alt='104 logo' />
-              </a>
             </div>
           ) : null}
         </div>
