@@ -24,7 +24,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.left_box}>
           <div className={styles.textbox}>
@@ -84,9 +84,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default SectionWrapper(Hero, 'hero');
-// export default Hero;
+// export default SectionWrapper(Hero, 'hero');
+export default Hero;
