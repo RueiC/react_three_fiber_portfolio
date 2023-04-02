@@ -130,10 +130,11 @@
           font-weight: 800;
         }
 
-        & div {
+        & ul {
           font-size: 1.7rem;
           line-height: 3.4rem;
           letter-spacing: 2px;
+          padding-left: 22px;
 
           opacity: 0;
           animation: animation.$animation_slide_right 1s ease forwards;

@@ -14,6 +14,7 @@ import SocialMedia from './SocialMedia';
 import HeroBalls from './HeroBalls';
 import MobileNav from './MobileNav';
 import DesktopNav from './DesktopNav';
+import Redirect from './Redirect';
 
 export {
   Hero,
@@ -32,4 +33,5 @@ export {
   HeroBalls,
   MobileNav,
   DesktopNav,
+  Redirect,
 };

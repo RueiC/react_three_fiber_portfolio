@@ -9,6 +9,7 @@ import {
   Navbar,
   Skills,
   Works,
+  Redirect,
 } from '../components';
 import styles from '../styles/Home.module.scss';
 
@@ -37,6 +38,7 @@ export default function Home() {
           <About />
           <Contact />
         </div>
+        <Redirect />
       </main>
     </>
   );

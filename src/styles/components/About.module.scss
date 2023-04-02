@@ -23,14 +23,12 @@
   & h2 {
     font-size: 5rem;
     font-weight: bold;
+    text-transform: capitalize;
   }
 }
 
 .container {
   position: relative;
-  // display: flex;
-  // justify-content: start;
-  // align-items: start;
   width: 100%;
   min-height: 55vh;
 
@@ -62,6 +60,14 @@
       opacity: 0;
 
       animation: animations.$animation_slide_top 1s ease forwards;
+    }
+
+    & strong {
+      color: var(--secondary-color);
+    }
+
+    & ul {
+      padding-left: 18px;
     }
   }
 

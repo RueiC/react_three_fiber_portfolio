@@ -30,15 +30,13 @@ const Hero = () => {
           <div className={styles.textbox}>
             <span className={styles.title}>Hello</span>
             <h1>I&apos;m Ray</h1>
-            <div>
-              從行銷領域跨領域自學前端技術
-              <br />
-              設計背景出身，可減少與設計師溝通的成本
-              <br />
-              學習的技術包含 <span ref={el}></span>
-              <br />
-              具備基礎網頁開發能力
-            </div>
+            <ul>
+              <li>設計背景出身，可減少與設計師溝通的成本</li>
+              <li>曾任職電商影音行銷，理解行銷需求</li>
+              <li>
+                學習的技術包含 <span ref={el}></span>
+              </li>
+            </ul>
           </div>
 
           <div className={styles.links}>

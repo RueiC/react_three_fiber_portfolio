@@ -24,6 +24,7 @@
     color: var(--text-color);
     font-size: 16px;
     font-weight: 500;
+    opacity: 0.8;
   }
 }
 
@@ -31,6 +32,8 @@
   margin-top: 1rem;
   list-style-type: disc;
   margin-left: 1rem;
+  padding-left: 8px;
+  opacity: 0.8;
 
   & li {
     color: var(--text-color);

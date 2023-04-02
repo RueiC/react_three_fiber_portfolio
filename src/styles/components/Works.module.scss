@@ -55,6 +55,10 @@
       font-size: 1.7rem;
       line-height: 3.1rem;
       letter-spacing: 1.5px;
+
+      & strong {
+        color: var(--secondary-color);
+      }
     }
   }
 

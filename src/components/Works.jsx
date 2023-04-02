@@ -17,11 +17,15 @@ const Works = () => {
 
       <div className={styles.text_box}>
         <motion.p variants={fadeIn('', '', 0.1, 1)}>
-          在自學期間，除了學習基本的HTML、CSS /
-          SASS、JavaScript之外，也多方探索嘗試新的技術，目前使用中且持續學習的技術為Next.js、Vue、React、TypeScript、Tailwind
-          CSS等。
+          在自學期間，我不僅學習了 HTML、CSS、JavaScript{' '}
+          的基礎知識，還對新技術進行了探索和嘗試。目前專注於學習{' '}
+          <strong>Next.js</strong>、<strong>Vue 3</strong>、
+          <strong>React</strong>、<strong>TypeScript</strong>、
+          <strong>Tailwind CSS</strong> 等前沿技術。此外正在研究{' '}
+          <strong>React Three Fiber</strong> 和 <strong>three.js</strong>。
           <br />
-          在過去實作的三個專案中，學習到了如何實作API的串接、CRUD、SSG、SSR、Typescript的型別定義等，具備基礎網頁開發能力。
+          <br />
+          為了更精進我的技能，我開發了三個專案，展示了我在前端開發方面的熱情
         </motion.p>
       </div>
 
